@@ -45,8 +45,15 @@ increase.style.fontSize="100%";
 /*Create a variable name menuItems and assign it an array of three of your favorite items at McDonald's.
 
 Next, create a function named valueMenu that will display your favorite items in the paragraph the the id of `menu` after clicking on the showMenu paragraph.*/
+var menuItems= ["Burger","Fries","Drink"];
+var mcMenu= document.getElementById('showMenu');
+mcMenu.addEventListener('click', valueMenu);
 
+function valueMenu(){
+	var dinner= document.getElementById('menu');
+	dinner.innerHTML= menuItems;
 
+}
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 20px after clicking on the text.*/
 
