@@ -82,8 +82,14 @@ function showPrice(){
 
 //7. Mr. Buttons
 /*Add an Event Listener to the button that will display `myQuote` inside the paragraph with the id of `displayQuote` after the button is clicked.*/
-
 var myQuote = "Our lives are defined by opportunities; even the ones we miss.";
+var activate= document.getElementById("Benjamin");
+activate.addEventListener('click',text);
+
+function text(){
+	var showQuote= document.getElementById("displayQuote");
+	showQuote.innerHTML=myQuote;
+}
 
 
 //8. Say It again, Randomly
