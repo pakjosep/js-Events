@@ -74,9 +74,7 @@ oreoPrice.addEventListener('mouseover', showPrice);
 
 function showPrice(){
 	var cashMoney= document.getElementById("price");
-	if(cashMoney.style.display=== ""){
 	   cashMoney.innerHTML= "$5.55";
-	}
 	
 }
 
@@ -109,3 +107,16 @@ function randomizer(){
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clickig on the button.
 */
+
+var moneyButton = document.getElementById('showHide');
+moneyButton.addEventListener('click', moneyTeam);
+
+function moneyTeam(){
+	var connectPic= document.getElementById('showmoney');
+	if (connectPic.style.display==='none'){
+		connectPic.style.display='block';
+	}else{
+		connectPic.style.display='none';
+	}
+}
+moneyTeam();
